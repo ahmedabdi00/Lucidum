@@ -2,23 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@media screen and (min-width: 1280px) {
-	.header-shadow {
-		filter: drop-shadow(0 32px 2px 0 rgba(0, 0, 0, 0.5)) !important;
-	}
-}
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-	.header-shadow {
-		filter: drop-shadow(0 24px 2px 0 rgba(0, 0, 0, 0.5)) !important;
-	}
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-	.header-shadow {
-		filter: drop-shadow(0 16px 2px 0 rgba(0, 0, 0, 0.5)) !important;
-	}
-}
-@media screen and (min-width: 640px) and (max-width: 767px) {
-	.header-shadow {
-		filter: drop-shadow(0 8px 2px 0 rgba(0, 0, 0, 0.5)) !important;
-	}
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }

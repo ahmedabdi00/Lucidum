@@ -9,7 +9,7 @@ import { useState } from "react"
 const Navbar = () => {
 	const [open, setOpen] = useState(false)
 	return (
-		<nav className="w-full flex py-6 px-6 justify-between lg:justify-evenly items-center navbar">
+		<nav className="w-full flex py-6 px-6 justify-between lg:justify-evenly items-center navbar ">
 			<a href="/#">
 				<Image
 					src="/logo-label.svg"
@@ -49,7 +49,7 @@ const Navbar = () => {
 				))}
 			</ul>
 			<div className="flex justify-end items-center">
-				<button className="bg-[#1A8488] px-4 py-2 text-white drop-shadow-[0_8px_2px_rgba(0,0,0,0.5)] hover:translate-x-1 hover:-translate-y-1 transition-all hover:bg-[#156b6e]">
+				<button className="bg-[#1A8488] px-4 py-2 text-white hover:drop-shadow-[-4px_4px_2px_rgba(0,0,0,0.5)] hover:translate-x-1 hover:-translate-y-1 transition-all hover:bg-[#156b6e]">
 					Get Started
 				</button>
 			</div>

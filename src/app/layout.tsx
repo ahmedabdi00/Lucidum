@@ -11,7 +11,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 	return (
 		<html lang="en" className={outfit.className}>
 			<body>
-				<div className="container mx-auto">{children}</div>
+				<div className="container h-full mx-auto">{children}</div>
 			</body>
 		</html>
 	)
