@@ -43,23 +43,24 @@ const Header = () => {
 					<Image src="/header.svg" alt="lucidum" className=" header-shadow" width={headerWidth} height={10} />
 				</motion.div>
 
-				<div className="flex flex-col my-6 lg:w-1/3 self-start w-full">
+				<div className="flex flex-col lg:p-8 my-6 lg:w-1/3 self-start w-full">
 					<motion.div
 						initial={{ opacity: 0, x: -150 }}
 						transition={{ duration: 0.5 }}
 						animate={{ opacity: 1, x: 0 }}>
-						<div className="px-2 py-1 w-1/2 self-start m-2 lg:text-xl text-sm rounded-md">
-							Understand Your Rentals Like Never Before With Lucidum
+						<div className="px-2 py-1 font-bold w-full self-start m-2 lg:text-3xl text-md rounded-md">
+							Understand Your Rentals Like Never Before With Lucidum.Ai
 						</div>
 					</motion.div>
 					<motion.div
 						initial={{ opacity: 0, x: -150 }}
 						transition={{ duration: 1 }}
 						animate={{ opacity: 1, x: 0 }}>
-						<div className="px-2 py-1 w-3/4 lg:w-full self-start m-2 lg:text-xl text-sm rounded-md">
+						<div className="px-2 py-1 w-3/4 lg:w-full self-start m-2 lg:text-lg text-md rounded-md">
 							Here at Lucidum.Ai we know that it is not easy to set the right price, so we take the burden
-							off your shoulders. We offer <span className="font-bold">Simplicity</span> and as our name
-							suggests <span className="font-bold">Clartiy!</span>
+							off your shoulders. We offer{" "}
+							<span className="font-bold text-[#1A8488]">Simplicity, Accuracy,</span> and as our name
+							suggests <span className="font-bold text-[#1A8488]">Clartiy!</span>
 						</div>
 					</motion.div>
 				</div>
