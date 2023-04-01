@@ -1,6 +1,7 @@
 import Navbar from "./components/layout/navbar"
 import Header from "./components/layout/header"
 import Products from "./components/layout/products"
+import Footer from "./components/layout/footer"
 
 export default function Page() {
 	return (
@@ -8,6 +9,7 @@ export default function Page() {
 			<Navbar />
 			<Header />
 			<Products />
+			<Footer />
 		</>
 	)
 }

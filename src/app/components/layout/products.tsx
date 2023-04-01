@@ -1,9 +1,9 @@
 const Products = () => {
 	return (
-		<div className="h-screen" id="products">
+		<div className="h-screen bg-black text-white" id="products">
 			<div className="flex flex-col justify-center py-8">
 				<p className="text-lg uppercase lg:text-2xl m-8">
-					The Last All-In-One Managment Company You Will Ever Need
+					The Last All-In-One Management Company You Will Ever Need
 				</p>
 				<div className="flex justify-center">
 					<div className="flex m-8 justify-center items-center flex-col lg:flex-row w-2/3 gap-2">
@@ -23,7 +23,6 @@ const Products = () => {
 				</div>
 			</div>
 			<div className="flex flex-col justify-center items-center">
-				{/* create have 2 dotted lines from right and left of the title */}
 				<p className="text-lg uppercase lg:text-2xl m-8 ">ANR Calculator</p>
 			</div>
 		</div>
