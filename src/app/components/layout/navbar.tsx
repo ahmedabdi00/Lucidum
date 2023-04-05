@@ -5,6 +5,7 @@ import { navLinks } from "../../../config/constants"
 import Hamburger from "hamburger-react"
 
 import { useState } from "react"
+import { motion } from "framer-motion"
 
 const Navbar = () => {
 	const [open, setOpen] = useState(false)
@@ -41,11 +42,33 @@ const Navbar = () => {
 			)}
 			<ul className="list-none lg:inline-flex hidden justify-center items-center  text-center">
 				{navLinks.map((nav, index) => (
-					<li
-						key={nav.id}
-						className={`font-bold cursor-pointer text-[16px] text-center text-black mr-10 hover:translate-x-1 hover:-translate-y-1 transition-all`}>
-						<a href={nav.url}>{nav.title}</a>
-					</li>
+					<div key={nav.id} className="group">
+						<li
+							key={nav.id}
+							className={`font-bold cursor-pointer text-[16px] text-center text-black group-hover:block mr-10 transition-all relative`}>
+							<a href={nav.url}>{nav.title}</a>
+							{/* on hover of each element display a drop down under the item with the dropdown values */}
+							{nav.dropdown && (
+								<div className="absolute bg-black text-white z-10 group-hover:block hidden ">
+									<ul className="list-none flex flex-col justify-center items-center group-hover:block text-center p-4">
+										{nav.dropdown.map((dropdown, index) => (
+											<motion.button
+												key={dropdown.id}
+												whileHover={{
+													translateX: 5,
+													transition: { duration: 0.2 },
+												}}>
+												<li
+													className={`font-bold cursor-pointer text-center mr-10 transition-all relative`}>
+													{dropdown.title}
+												</li>
+											</motion.button>
+										))}
+									</ul>
+								</div>
+							)}
+						</li>
+					</div>
 				))}
 			</ul>
 			<div className="flex justify-end items-center">
